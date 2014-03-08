@@ -9,7 +9,7 @@ function start(route, handle) {
 		route(pathname, handle);
 
 		response.writeHead(200, {"Content-Type": "text/plain"}); 
-		response.write("Hello World");
+		response.write("Hello World again!");
 		response.end();
 	}
 	http.createServer(onRequest).listen(8888);
